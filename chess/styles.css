@@ -7,6 +7,44 @@ body {
     padding: 20px;
 }
 
+/* Chess piece fallback styles using Unicode symbols */
+.piece-417db.wP::after { content: '♙'; }
+.piece-417db.wR::after { content: '♖'; }
+.piece-417db.wN::after { content: '♘'; }
+.piece-417db.wB::after { content: '♗'; }
+.piece-417db.wQ::after { content: '♕'; }
+.piece-417db.wK::after { content: '♔'; }
+.piece-417db.bP::after { content: '♟'; }
+.piece-417db.bR::after { content: '♜'; }
+.piece-417db.bN::after { content: '♞'; }
+.piece-417db.bB::after { content: '♝'; }
+.piece-417db.bQ::after { content: '♛'; }
+.piece-417db.bK::after { content: '♚'; }
+
+.piece-417db {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piece-417db::after {
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* When using Unicode fallback, show the symbols */
+.use-unicode-fallback .piece-417db::after {
+    opacity: 1;
+}
+
+/* Hide broken images when using fallback */
+.use-unicode-fallback .piece-417db {
+    background-image: none !important;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -34,6 +72,24 @@ h1 {
     max-width: 500px;
     margin-bottom: 20px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Unicode chess pieces as fallback */
+.piece-417db {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 45px !important;
+    line-height: 1 !important;
+}
+
+.white-1e1d7 .piece-417db {
+    color: white !important;
+    text-shadow: 0 0 2px black;
+}
+
+.black-3c85d .piece-417db {
+    color: black !important;
 }
 
 #status {
@@ -107,4 +163,33 @@ button:hover {
         padding: 8px 16px;
         font-size: 14px;
     }
+}
+
+/* Chess piece Unicode fallback styling */
+.use-unicode-fallback .piece-417db {
+    background-image: none !important;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.use-unicode-fallback .white-1e1d7 .piece-417db.wP::after { content: '♙'; }
+.use-unicode-fallback .white-1e1d7 .piece-417db.wR::after { content: '♖'; }
+.use-unicode-fallback .white-1e1d7 .piece-417db.wN::after { content: '♘'; }
+.use-unicode-fallback .white-1e1d7 .piece-417db.wB::after { content: '♗'; }
+.use-unicode-fallback .white-1e1d7 .piece-417db.wQ::after { content: '♕'; }
+.use-unicode-fallback .white-1e1d7 .piece-417db.wK::after { content: '♔'; }
+.use-unicode-fallback .black-3c85d .piece-417db.bP::after { content: '♟'; }
+.use-unicode-fallback .black-3c85d .piece-417db.bR::after { content: '♜'; }
+.use-unicode-fallback .black-3c85d .piece-417db.bN::after { content: '♞'; }
+.use-unicode-fallback .black-3c85d .piece-417db.bB::after { content: '♝'; }
+.use-unicode-fallback .black-3c85d .piece-417db.bQ::after { content: '♛'; }
+.use-unicode-fallback .black-3c85d .piece-417db.bK::after { content: '♚'; }
+
+.use-unicode-fallback .piece-417db::after {
+    position: absolute;
+    z-index: 5;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
