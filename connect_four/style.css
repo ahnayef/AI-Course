@@ -1,0 +1,82 @@
+/* Basic styling for the Connect 4 game */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Game board styling */
+#game-board {
+    display: inline-block;
+    background-color: #0066cc;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Individual cell styling */
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 3px solid #004499;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Player pieces */
+.cell.player1 {
+    background-color: #ff4444;
+}
+
+.cell.player2 {
+    background-color: #ffdd44;
+}
+
+/* Hover effect */
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.player1:hover,
+.cell.player2:hover {
+    cursor: default;
+}
+
+/* Reset button */
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#reset-btn:hover {
+    background-color: #218838;
+}
