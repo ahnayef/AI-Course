@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chess Game</title>
+    <!-- Chess.js for game logic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <!-- jQuery for chessboard.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Chessboard.js for UI -->
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Chess Game</h1>
+        <p class="instructions">You play as white. Drag pieces to make a move.</p>
+        
+        <!-- Game status display -->
+        <div id="status">Game in progress</div>
+        
+        <!-- Chess board container -->
+        <div id="board"></div>
+        
+        <!-- Game controls -->
+        <div class="controls">
+            <button id="new-game">New Game</button>
+            <button id="flip-board">Flip Board</button>
+        </div>
+        
+        <!-- Game info -->
+        <div class="game-info">
+            <p>Computer thinks: <span id="thinking">...</span></p>
+            <p>Last move: <span id="last-move">None</span></p>
+            <p>Captured pieces: <span id="captured">None</span></p>
+        </div>
+    </div>
+    
+    <!-- Custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
