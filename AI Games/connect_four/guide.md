@@ -2524,3 +2524,6 @@ This Connect 4 game demonstrates fundamental programming concepts that apply to 
 The most important lesson: **programming is about breaking complex problems into smaller, manageable pieces.** Each function in our game solves one small piece of the larger Connect 4 puzzle.
 
 Keep experimenting, keep learning, and most importantly - have fun coding! 🚀
+
+# Screenshoots
+![connect4](screenshoots/connect4.png)

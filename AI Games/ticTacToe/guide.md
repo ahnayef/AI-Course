@@ -379,6 +379,9 @@ If you're interested in learning more, you could try:
 
 Happy coding, and have fun playing Tic Tac Toe!
 
+# Screenshoots
+
+![ticTacToe](screenshoots/ticTacToe.png)
 
 ## Resources:
 - https://www.youtube.com/watch?v=Y6cMTh2BODY

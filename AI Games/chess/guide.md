@@ -1436,5 +1436,9 @@ Remember that the best way to learn is by experimenting. Try making changes to t
 
 Happy coding and good luck in your games against the AI!
 
+# Screenshoots
+
+![Chess](screenshoots/chess.png)
+
 ## Resources:
 - https://youtu.be/w4FFX_otR-4
