@@ -378,3 +378,8 @@ If you're interested in learning more, you could try:
 - Creating a more attractive design with custom graphics
 
 Happy coding, and have fun playing Tic Tac Toe!
+
+
+## Resources:
+- https://www.youtube.com/watch?v=Y6cMTh2BODY
+- https://youtu.be/trKjYdBASyQ
